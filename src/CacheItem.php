@@ -10,6 +10,7 @@ use CComponent;
  * @see \yii1tech\psr\cache\CacheItemPool
  *
  * @author Paul Klimov <klimov.paul@gmail.com>
+ * @author Sebastian Krein <darealfive@gmx.de>
  * @since 1.0
  */
 class CacheItem extends CComponent implements CacheItemContract
@@ -94,7 +95,7 @@ class CacheItem extends CComponent implements CacheItemContract
     /**
      * {@inheritdoc}
      */
-    public function get()
+    public function get(): mixed
     {
         if ($this->_value === false) {
             return null;
@@ -114,7 +115,7 @@ class CacheItem extends CComponent implements CacheItemContract
     /**
      * {@inheritdoc}
      */
-    public function set($value): self
+    public function set($value): static
     {
         $this->_value = $value;
 
@@ -124,7 +125,7 @@ class CacheItem extends CComponent implements CacheItemContract
     /**
      * {@inheritdoc}
      */
-    public function expiresAt($expiration): self
+    public function expiresAt($expiration): static
     {
         if ($expiration === null) {
             $this->_expire = null;
@@ -138,7 +139,7 @@ class CacheItem extends CComponent implements CacheItemContract
     /**
      * {@inheritdoc}
      */
-    public function expiresAfter($time): self
+    public function expiresAfter($time): static
     {
         if ($time === null) {
             $this->_expire = null;

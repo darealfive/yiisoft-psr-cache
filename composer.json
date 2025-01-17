@@ -15,9 +15,9 @@
         }
     ],
     "require": {
-        "php": ">=7.1",
+        "php": ">=8.0",
         "yiisoft/yii": "~1.1.0",
-        "psr/cache": "^1.0.0"
+        "psr/cache": "^3.0.0"
     },
     "require-dev": {
         "yii1tech/tagged-cache": "^1.0.0",

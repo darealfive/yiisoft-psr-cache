@@ -10,6 +10,7 @@ use Psr\Cache\CacheItemPoolInterface;
  * @see \yii1tech\psr\cache\CacheItemContract
  *
  * @author Paul Klimov <klimov.paul@gmail.com>
+ * @author Sebastian Krein <darealfive@gmx.de>
  * @since 1.0
  */
 interface CacheItemPoolContract extends CacheItemPoolInterface
@@ -19,14 +20,14 @@ interface CacheItemPoolContract extends CacheItemPoolInterface
      *
      * @return \yii1tech\psr\cache\CacheItemContract the corresponding Cache Item.
      */
-    public function getItem($key);
+    public function getItem($key): \Psr\Cache\CacheItemInterface;
 
     /**
      * {@inheritdoc}
      *
      * @return \Traversable|array<string, \yii1tech\psr\cache\CacheItemContract> collection of Cache Items keyed by the cache keys of each item.
      */
-    public function getItems(array $keys = []);
+    public function getItems(array $keys = []): iterable;
 
     /**
      * Fetches a value from the pool or computes it via given callback if not found.
