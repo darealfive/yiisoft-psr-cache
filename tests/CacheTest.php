@@ -1,9 +1,9 @@
 <?php
 
-namespace yii1tech\psr\cache\test;
+namespace darealfive\psr\cache\test;
 
-use yii1tech\psr\cache\Cache;
-use yii1tech\psr\cache\CacheItemPool;
+use darealfive\psr\cache\Cache;
+use darealfive\psr\cache\CacheItemPool;
 
 class CacheTest extends TestCase
 {

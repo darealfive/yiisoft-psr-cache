@@ -23,13 +23,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist yii1tech/psr-cache
+php composer.phar require --prefer-dist darealfive/yiisoft-psr-cache
 ```
 
 or add
 
 ```json
-"yii1tech/psr-cache": "*"
+"darealfive/yiisoft-psr-cache": "*"
 ```
 
 to the "require" section of your composer.json.

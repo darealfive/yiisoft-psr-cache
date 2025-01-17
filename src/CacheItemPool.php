@@ -1,6 +1,6 @@
 <?php
 
-namespace yii1tech\psr\cache;
+namespace darealfive\psr\cache;
 
 use CApplicationComponent;
 use Psr\Cache\CacheItemInterface;
@@ -21,7 +21,7 @@ use Yii;
  *             ],
  *         ],
  *         \Psr\Cache\CacheItemPoolInterface::class => [
- *             'class' => \yii1tech\psr\cache\CacheItemPool::class,
+ *             'class' => \darealfive\psr\cache\CacheItemPool::class,
  *             'cache' => 'cache',
  *         ],
  *         // ...
@@ -34,8 +34,8 @@ use Yii;
  *   All tags associated with the cache item are passed as 5th argument to {@see \ICache::set()} method, assuming its particular implementation will
  *   handle them. Thus cache item tags saving will **silently fail** if related cache component does not provide support for it.
  *
- * @see https://github.com/yii1tech/tagged-cache
- * @see \yii1tech\psr\cache\CacheItem
+ * @see https://github.com/darealfive/tagged-cache
+ * @see \darealfive\psr\cache\CacheItem
  *
  * @author Paul Klimov <klimov.paul@gmail.com>
  * @since 1.0

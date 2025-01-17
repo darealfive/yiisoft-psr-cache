@@ -1,6 +1,6 @@
 <?php
 
-namespace yii1tech\psr\cache;
+namespace darealfive\psr\cache;
 
 use Psr\Cache\CacheItemInterface;
 
@@ -9,7 +9,7 @@ use Psr\Cache\CacheItemInterface;
  *
  * It allows managing cache dependencies.
  *
- * @see \yii1tech\psr\cache\CacheItemPoolContract
+ * @see \darealfive\psr\cache\CacheItemPoolContract
  *
  * @author Paul Klimov <klimov.paul@gmail.com>
  * @since 1.0

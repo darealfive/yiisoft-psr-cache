@@ -1,13 +1,13 @@
 <?php
 
-namespace yii1tech\psr\cache;
+namespace darealfive\psr\cache;
 
 use Psr\Cache\CacheItemPoolInterface;
 
 /**
  * CacheItemPoolContract extends {@see \Psr\Cache\CacheItemPoolInterface}, adding extra features to it.
  *
- * @see \yii1tech\psr\cache\CacheItemContract
+ * @see \darealfive\psr\cache\CacheItemContract
  *
  * @author Paul Klimov <klimov.paul@gmail.com>
  * @author Sebastian Krein <darealfive@gmx.de>
@@ -18,14 +18,14 @@ interface CacheItemPoolContract extends CacheItemPoolInterface
     /**
      * {@inheritdoc}
      *
-     * @return \yii1tech\psr\cache\CacheItemContract the corresponding Cache Item.
+     * @return \darealfive\psr\cache\CacheItemContract the corresponding Cache Item.
      */
     public function getItem($key): \Psr\Cache\CacheItemInterface;
 
     /**
      * {@inheritdoc}
      *
-     * @return \Traversable|array<string, \yii1tech\psr\cache\CacheItemContract> collection of Cache Items keyed by the cache keys of each item.
+     * @return \Traversable|array<string, \darealfive\psr\cache\CacheItemContract> collection of Cache Items keyed by the cache keys of each item.
      */
     public function getItems(array $keys = []): iterable;
 

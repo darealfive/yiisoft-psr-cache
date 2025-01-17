@@ -1,17 +1,21 @@
 {
-    "name": "yii1tech/psr-cache",
+    "name": "darealfive/yiisoft-psr-cache",
     "description": "Provides support for PSR-6 compatible cache for Yii1 application",
     "keywords": ["yii1", "psr", "cache", "psr-6", "caching"],
     "license": "BSD-3-Clause",
     "support": {
-        "issues": "https://github.com/yii1tech/psr-cache/issues",
-        "wiki": "https://github.com/yii1tech/psr-cache/wiki",
-        "source": "https://github.com/yii1tech/psr-cache"
+        "issues": "https://github.com/darealfive/yiisoft-psr-cache/issues",
+        "wiki": "https://github.com/darealfive/yiisoft-psr-cache/wiki",
+        "source": "https://github.com/darealfive/yiisoft-psr-cache"
     },
     "authors": [
         {
             "name": "Paul Klimov",
             "email": "klimov.paul@gmail.com"
+        },
+        {
+            "name": "Sebastian Krein",
+            "email": "darealfive@gmx.de"
         }
     ],
     "require": {
@@ -25,17 +29,17 @@
     },
     "autoload": {
         "psr-4": {
-            "yii1tech\\psr\\cache\\": "src"
+            "darealfive\\psr\\cache\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "yii1tech\\psr\\cache\\test\\": "tests"
+            "darealfive\\psr\\cache\\test\\": "tests"
         }
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0.x-dev"
+            "dev-master": "2.0.x-dev"
         }
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace yii1tech\psr\cache\test;
+namespace darealfive\psr\cache\test;
 
 use CConsoleApplication;
 use CMap;

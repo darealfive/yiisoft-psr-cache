@@ -1,13 +1,13 @@
 <?php
 
-namespace yii1tech\psr\cache\test;
+namespace darealfive\psr\cache\test;
 
 use CDummyCache;
 use DateInterval;
 use ICache;
 use yii1tech\cache\tagged\ArrayCache;
-use yii1tech\psr\cache\CacheItemContract;
-use yii1tech\psr\cache\CacheItemPool;
+use darealfive\psr\cache\CacheItemContract;
+use darealfive\psr\cache\CacheItemPool;
 
 class CacheItemPoolTest extends TestCase
 {

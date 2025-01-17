@@ -1,6 +1,6 @@
 <?php
 
-namespace yii1tech\psr\cache;
+namespace darealfive\psr\cache;
 
 use CCache;
 use Psr\Cache\CacheItemPoolInterface;
@@ -17,7 +17,7 @@ use Yii;
  * return [
  *     'components' => [
  *         'cache' => [
- *             'class' => \yii1tech\psr\cache\Cache::class,
+ *             'class' => \darealfive\psr\cache\Cache::class,
  *             'psrCachePool' => function () {
  *                 return new ExamplePsrCachePool();
  *             },

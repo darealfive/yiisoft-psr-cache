@@ -1,13 +1,13 @@
 <?php
 
-namespace yii1tech\psr\cache;
+namespace darealfive\psr\cache;
 
 use CComponent;
 
 /**
- * CacheItem represents cache item used for interaction with {@see \yii1tech\psr\cache\CacheItemPool}.
+ * CacheItem represents cache item used for interaction with {@see \darealfive\psr\cache\CacheItemPool}.
  *
- * @see \yii1tech\psr\cache\CacheItemPool
+ * @see \darealfive\psr\cache\CacheItemPool
  *
  * @author Paul Klimov <klimov.paul@gmail.com>
  * @author Sebastian Krein <darealfive@gmx.de>
