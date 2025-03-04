@@ -105,7 +105,10 @@ class Cache extends CCache
 
         $item = $pool->getItem($key)
             ->set($value)
-            ->expiresAfter(\DateInterval::createFromDateString("{$expire} seconds"));
+            ->expiresAfter((int) $expire === 0
+                ? null
+                : \DateInterval::createFromDateString("{$expire} seconds")
+            );
 
         return $pool->save($item);
     }
@@ -123,7 +126,10 @@ class Cache extends CCache
         }
 
         $item->set($value)
-            ->expiresAfter(\DateInterval::createFromDateString("{$expire} seconds"));
+            ->expiresAfter((int) $expire === 0
+                ? null
+                : \DateInterval::createFromDateString("{$expire} seconds")
+            );
 
         return $pool->save($item);
     }
